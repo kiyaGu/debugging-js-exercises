@@ -1,5 +1,5 @@
 function Bike( colour ){
-  this.colour = color;
+  this.colour = colour;
 }
 
 Bike.prototype.describe = function(){
@@ -7,12 +7,12 @@ Bike.prototype.describe = function(){
 }
 
 Bike.prototype.calculateNumberOfGears = function(frontGears, rearGears){
-  frontGears * rearGears;
+  var numberOfGears = frontGears * rearGears;
 
   return numberOfGears;
 }
 
-const myBike = new Bik( 'yellow' );
+const myBike = new Bike( 'yellow' );
 
 myBike.describe();
 

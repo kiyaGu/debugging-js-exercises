@@ -1,17 +1,17 @@
 const y = 3;
 
-function outer( value ){
-  const increased = value + 2;
+function outer(value) {
+    const increased = value + 2;
 
-  function multiply(z){
-    const output = z * y;
+    function multiply(z) {
+        const output = z * y;
 
-    return output;
-  }
+        return output;
+    }
 
-  return multiply(increased);
+    return multiply(increased);
 }
 
-const result = outer( 5 );
+const result = outer(5);
 
-console.log( result );
+console.log(result);
